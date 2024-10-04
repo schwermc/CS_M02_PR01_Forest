@@ -11,18 +11,22 @@ public class NetworkManger : MonoBehaviourPunCallbacks
 
     private void Awake()
     {
-        // instance = this;
+        instance = this;
         // DontDestroyOnLoad(gameObject);
 
         // if an instance already exist and it's not this one - destroy it
-        if (instance != null && instance != this)
-            gameObject.SetActive(false);
-        else
-        {
-            // set the instance
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
+        //if (instance != null && instance != this)
+        //{
+        //    gameObject.SetActive(false);
+        //    //Destroy(this);
+        //}
+
+        //else
+        //{
+        //    // set the instance
+        //    instance = this;
+        //    // DontDestroyOnLoad(gameObject);
+        //}
 
     }
 

@@ -133,6 +133,7 @@ public class PlayerController : MonoBehaviourPun
         dead = true;
 
         GameManager.instance.alivePlayers--;
+        GameUI.instance.UpdatePlayerInfoText();
 
         // host will check win condition
         if (PhotonNetwork.IsMasterClient)
